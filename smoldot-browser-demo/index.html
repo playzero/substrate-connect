@@ -1,1 +1,48 @@
-<html><script type="module" src="index.98f9bf56.js"></script><script nomodule="" defer src="index.731a659b.js"></script><body> <div id="root"></div> <style>body{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:14px;margin:0}#messages{background-color:#000;color:#18ffb2;margin:0 auto}#messages,.message{padding:.5rem}.message time{display:inline-block;opacity:.5;width:10rem}.error{color:red}@keyframes pulse_animation{0%{opacity:.1}50%{opacity:1}to{opacity:.1}}.pulse{animation-duration:5s;animation-iteration-count:infinite;animation-name:pulse_animation;animation-timing-function:linear}</style> <section id="messages"></section> <script type="module" src="index.d265d3d9.js"></script><script src="index.3745b8c7.js" nomodule="" defer></script> </body></html>
+<html><head><script defer src="main.js"></script></head>
+<body>
+  <div id="root"></div>
+  <style>
+    body {
+      margin: 0;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 14px;
+    }
+    #messages {
+      background-color: black;
+      margin: 0 auto;
+      color: #18ffb2;
+      padding: 0.5rem
+    }
+    .message {
+      padding: 0.5rem;
+    }
+    .message time {
+      display: inline-block;
+      opacity: 0.5;
+      width: 10rem;
+    }
+    .error {
+      color: red;
+    }
+    @keyframes pulse_animation {
+      0% { 
+          opacity: 0.1;
+      }
+      50% { 
+          opacity: 1.0;
+      }
+      100% { 
+          opacity: 0.1;
+      }
+    }
+    .pulse {
+        animation-name: pulse_animation;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+  </style>
+  <section id="messages"></section>
+  <script type="module" src="./src/index.ts"></script>
+</body>
+</html>
