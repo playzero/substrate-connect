@@ -1,5 +1,5 @@
-import React from 'react';
-import { Column } from '../utils/types';
+import React from "react";
+import { Column } from "../utils/types";
 interface rowContent {
     withWhom: string;
     extrinsic: string;

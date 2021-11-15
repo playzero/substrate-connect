@@ -131,7 +131,6 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_substrate_connect.Detector.html#connect" class="tsd-kind-icon">connect</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_substrate_connect.Detector.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_substrate_connect.Detector.html#hasExtension" class="tsd-kind-icon">has<wbr>Extension</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_substrate_connect.Detector.html#provider" class="tsd-kind-icon">provider</a></li>
 							</ul>
@@ -151,7 +150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect/src/Detector.ts#L82">packages/connect/src/Detector.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect/src/Detector.ts#L68">packages/connect/src/Detector.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -190,7 +189,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect/src/Detector.ts#L61">packages/connect/src/Detector.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect/src/Detector.ts#L47">packages/connect/src/Detector.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -210,13 +209,14 @@
 					<a name="connect" class="tsd-anchor"></a>
 					<h3>connect</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span>relay<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ChainInfo</span>, parachainSpec<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ApiOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApiPromise</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span>chainSpec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, parachainSpec<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ApiOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApiPromise</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span>knownChain<span class="tsd-signature-symbol">: </span><a href="../enums/_substrate_connect.SupportedChains.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SupportedChains</a>, parachainSpec<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ApiOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApiPromise</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect/src/Detector.ts#L116">packages/connect/src/Detector.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect/src/Detector.ts#L98">packages/connect/src/Detector.ts:98</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -227,12 +227,10 @@
 								<p>There are 4 bundled networks: &quot;polkadot&quot;, &quot;kusama&quot;, &quot;rococo&quot; and
 								&quot;westend&quot; which require no further configuration.</p>
 								<p>Alternatively you may supply a chain spec and options to connect to a
-								custom chain with a light client (in-page only).</p>
+								custom chain with a light client .</p>
 								<dl class="tsd-comment-tags">
 									<dt>remarks</dt>
-									<dd><p>When providing a custom chain spec, detect will always configure and return
-										an in-page light client and not use the extension</p>
-										<p>Typically options is used to pass custom types to PolkadotJS API.</p>
+									<dd><p>Typically options is used to pass custom types to PolkadotJS API.</p>
 										<p>See the PolkadotJS docs for documentation on using PolkadotJS.</p>
 										<p><a href="https://polkadot.js.org/docs/" class="external">https://polkadot.js.org/docs/</a></p>
 									</dd>
@@ -241,11 +239,57 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>relay: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ChainInfo</span></h5>
+									<h5>chainSpec: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>param of {@link ChainInfo} or string type. In case of {@link ChainInfo},
-											name (string - the name of the blockchain network to connect to) and
-										spec(string - a chainSpec to connect to a different network)</p>
+										<p>string of the chainSpec to connect to a network</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parachainSpec: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>an optional param. This param is the parachain spec to connect to a different network)</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">ApiOptions</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>an optional param for any extra API options to passed to
+										PolkadotJS when constructing it.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApiPromise</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>a promise that resolves to an instance of the PolkadotJS API</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect/src/Detector.ts#L128">packages/connect/src/Detector.ts:128</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>connect attempts to detect the extension and configures the PolkadotJS
+									API instance to return appropriately.</p>
+								</div>
+								<p>There are 4 bundled networks: &quot;polkadot&quot;, &quot;kusama&quot;, &quot;rococo&quot; and
+								&quot;westend&quot; which require no further configuration.</p>
+								<p>Alternatively you may supply a chain spec and options to connect to a
+								custom chain with a light client.</p>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>Typically options is used to pass custom types to PolkadotJS API.</p>
+										<p>See the PolkadotJS docs for documentation on using PolkadotJS.</p>
+										<p><a href="https://polkadot.js.org/docs/" class="external">https://polkadot.js.org/docs/</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>knownChain: <a href="../enums/_substrate_connect.SupportedChains.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SupportedChains</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><a href="../enums/_substrate_connect.SupportedChains.html">SupportedChains</a> one of the predefined chainSpecs</p>
 									</div>
 								</li>
 								<li>
@@ -268,37 +312,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="disconnect" class="tsd-anchor"></a>
-					<h3>disconnect</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">disconnect<span class="tsd-signature-symbol">(</span>chainName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect/src/Detector.ts#L179">packages/connect/src/Detector.ts:179</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>disconnect disconnects the PolkadotJS API isntance</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>chainName: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>the name of the blockchain network to disconnect from</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="hasExtension" class="tsd-anchor"></a>
 					<h3>has<wbr>Extension</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -308,7 +321,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect/src/Detector.ts#L70">packages/connect/src/Detector.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect/src/Detector.ts#L56">packages/connect/src/Detector.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -329,13 +342,14 @@
 					<a name="provider" class="tsd-anchor"></a>
 					<h3>provider</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">(</span>chain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ChainInfo</span>, parachainSpec<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ProviderInterface</span></li>
+						<li class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">(</span>chainSpec<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, parachainSpec<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ProviderInterface</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">provider<span class="tsd-signature-symbol">(</span>knownChain<span class="tsd-signature-symbol">: </span><a href="../enums/_substrate_connect.SupportedChains.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SupportedChains</a>, parachainSpec<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ProviderInterface</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect/src/Detector.ts#L158">packages/connect/src/Detector.ts:158</a></li>
+									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect/src/Detector.ts#L220">packages/connect/src/Detector.ts:220</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -353,7 +367,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>chain: <span class="tsd-signature-type">ChainInfo</span></h5>
+									<h5>chainSpec: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>string of the chainSpec to connect to a network</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parachainSpec: <span class="tsd-signature-type">string</span></h5>
@@ -362,7 +379,43 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ProviderInterface</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ProviderInterface</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>a provider will be used in a ApiPromise create for PolkadotJS API</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect/src/Detector.ts#L236">packages/connect/src/Detector.ts:236</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Detects and returns an appropriate PolkadotJS provider depending on whether the user has the substrate connect extension installed</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>internal</dt>
+									<dd></dd>
+									<dt>remarks</dt>
+									<dd><p>This is used internally for advanced PolkadotJS use cases and is not supported.  Use <a href="_substrate_connect.Detector.html#connect">connect</a> instead.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>knownChain: <a href="../enums/_substrate_connect.SupportedChains.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SupportedChains</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p><a href="../enums/_substrate_connect.SupportedChains.html">SupportedChains</a> one of the predefined chainSpecs</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parachainSpec: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>optional param of the parachain chainSpecs to connect to</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ProviderInterface</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>a provider will be used in a ApiPromise create for PolkadotJS API</p>
 						</li>
 					</ul>
@@ -391,6 +444,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/_substrate_connect.SupportedChains.html" class="tsd-kind-icon">Supported<wbr>Chains</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
@@ -404,9 +460,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_substrate_connect.Detector.html#connect" class="tsd-kind-icon">connect</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_substrate_connect.Detector.html#disconnect" class="tsd-kind-icon">disconnect</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_substrate_connect.Detector.html#hasExtension" class="tsd-kind-icon">has<wbr>Extension</a>
@@ -436,6 +489,9 @@
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>

@@ -1,14 +1,14 @@
 export const emojis = {
-    banknote: '💵',
-    brick: '🧱',
-    chain: '🔗',
-    chequeredFlag: '🏁',
-    clock: '🕒',
-    info: 'ℹ️',
-    newspaper: '🗞️',
-    seedling: '🌱',
-    stethoscope: '🩺',
-    tick: '✅'
+    banknote: "💵",
+    brick: "🧱",
+    chain: "🔗",
+    chequeredFlag: "🏁",
+    clock: "🕒",
+    info: "ℹ️",
+    newspaper: "🗞️",
+    seedling: "🌱",
+    stethoscope: "🩺",
+    tick: "✅",
 };
 export default class UI {
     options;
@@ -21,7 +21,7 @@ export default class UI {
         this.model = model;
         const container = document.getElementById(this.options.containerId);
         if (container === null) {
-            throw Error('Could not find the container. Did you change the Html?');
+            throw Error("Could not find the container. Did you change the Html?");
         }
         this.container = container;
     }
@@ -29,7 +29,7 @@ export default class UI {
         return ((till - from) / 1000).toFixed(2);
     };
     timestampHtml = (withTime) => {
-        const timestampDiv = document.createElement('time');
+        const timestampDiv = document.createElement("time");
         if (!withTime) {
             return timestampDiv;
         }
@@ -38,16 +38,16 @@ export default class UI {
         return timestampDiv;
     };
     messageHtml = (message, withTime) => {
-        const messageDiv = document.createElement('div');
-        messageDiv.classList.add('message');
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("message");
         messageDiv.appendChild(this.timestampHtml(withTime));
         messageDiv.appendChild(document.createTextNode(message));
         return messageDiv;
     };
     errorHtml = (message) => {
-        const messageDiv = document.createElement('div');
-        messageDiv.classList.add('message');
-        messageDiv.classList.add('error');
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("message");
+        messageDiv.classList.add("error");
         messageDiv.appendChild(document.createTextNode(message));
         return messageDiv;
     };
@@ -77,12 +77,12 @@ export default class UI {
     showSyncing = () => {
         if (!this.syncMessage) {
             // message container
-            const syncState = document.createElement('div');
-            syncState.classList.add('message');
+            const syncState = document.createElement("div");
+            syncState.classList.add("message");
             //contents - empty timestamp and pulsing message
             syncState.appendChild(this.timestampHtml());
-            const syncMessage = document.createElement('em');
-            syncMessage.classList.add('pulse');
+            const syncMessage = document.createElement("em");
+            syncMessage.classList.add("pulse");
             syncMessage.innerHTML = `${emojis.chain} Chain is syncing...`;
             syncState.appendChild(syncMessage);
             this.syncMessage = syncMessage;
@@ -92,14 +92,14 @@ export default class UI {
         else {
             // Cover case that we change from synced state back to syncing.
             this.syncMessage.innerHTML = `${emojis.chain} Chain is syncing...`;
-            this.ensureClassOn(this.syncMessage, 'pulse');
+            this.ensureClassOn(this.syncMessage, "pulse");
         }
     };
     showSynced = () => {
         if (!this.syncState || !this.syncMessage) {
-            throw new Error('There is no sync state UI to update. You should have called `showSyncing()` first.');
+            throw new Error("There is no sync state UI to update. You should have called `showSyncing()` first.");
         }
-        this.syncMessage.classList.remove('pulse');
+        this.syncMessage.classList.remove("pulse");
         this.syncMessage.innerHTML = `${emojis.tick} Chain synced!`;
     };
 }

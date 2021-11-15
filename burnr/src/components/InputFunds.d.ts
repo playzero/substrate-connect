@@ -1,5 +1,5 @@
-import React, { SetStateAction, Dispatch } from 'react';
-import BN from 'bn.js';
+import React, { SetStateAction, Dispatch } from "react";
+import BN from "bn.js";
 interface Props {
     total: BN;
     currency: string;

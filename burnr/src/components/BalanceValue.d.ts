@@ -1,7 +1,7 @@
-import React from 'react';
-import { SizeScale } from '../utils/types';
-import { CSSProperties } from '@material-ui/core/styles/withStyles';
-import { Balance } from '@polkadot/types/interfaces';
+import React from "react";
+import { SizeScale } from "../utils/types";
+import { CSSProperties } from "@material-ui/core/styles/withStyles";
+import { Balance } from "@polkadot/types/interfaces";
 interface Props extends SizeScale {
     value: Balance;
     isVisible: boolean;

@@ -1,5 +1,5 @@
-import React from 'react';
-import { LocalStorageAccountCtx } from './utils/types';
+import React from "react";
+import { LocalStorageAccountCtx } from "./utils/types";
 interface Props {
     account?: LocalStorageAccountCtx;
     loader?: boolean;

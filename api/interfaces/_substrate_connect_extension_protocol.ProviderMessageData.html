@@ -72,7 +72,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ProviderMessageData</span>
+						<a href="_substrate_connect_extension_protocol.CommonProviderMessageData.html" class="tsd-signature-type" data-tsd-kind="Interface">CommonProviderMessageData</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">ProviderMessageData</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -84,10 +89,11 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_substrate_connect_extension_protocol.ProviderMessageData.html#action" class="tsd-kind-icon">action</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_substrate_connect_extension_protocol.ProviderMessageData.html#appName" class="tsd-kind-icon">app<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_substrate_connect_extension_protocol.ProviderMessageData.html#chainName" class="tsd-kind-icon">chain<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_substrate_connect_extension_protocol.ProviderMessageData.html#appName" class="tsd-kind-icon">app<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_substrate_connect_extension_protocol.ProviderMessageData.html#chainId" class="tsd-kind-icon">chain<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_substrate_connect_extension_protocol.ProviderMessageData.html#chainName" class="tsd-kind-icon">chain<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_substrate_connect_extension_protocol.ProviderMessageData.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_substrate_connect_extension_protocol.ProviderMessageData.html#origin" class="tsd-kind-icon">origin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_substrate_connect_extension_protocol.ProviderMessageData.html#origin" class="tsd-kind-icon">origin</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,7 +107,7 @@
 					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;forward&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;connect&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disconnect&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect-extension-protocol/src/index.ts#L95">packages/connect-extension-protocol/src/index.ts:95</a></li>
+							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect-extension-protocol/src/index.ts#L104">packages/connect-extension-protocol/src/index.ts:104</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -110,13 +116,14 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="appName" class="tsd-anchor"></a>
 					<h3>app<wbr>Name</h3>
 					<div class="tsd-signature tsd-kind-icon">app<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_substrate_connect_extension_protocol.CommonProviderMessageData.html">CommonProviderMessageData</a>.<a href="_substrate_connect_extension_protocol.CommonProviderMessageData.html#appName">appName</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect-extension-protocol/src/index.ts#L91">packages/connect-extension-protocol/src/index.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect-extension-protocol/src/index.ts#L96">packages/connect-extension-protocol/src/index.ts:96</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -125,13 +132,30 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="chainId" class="tsd-anchor"></a>
+					<h3>chain<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">chain<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_substrate_connect_extension_protocol.CommonProviderMessageData.html">CommonProviderMessageData</a>.<a href="_substrate_connect_extension_protocol.CommonProviderMessageData.html#chainId">chainId</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect-extension-protocol/src/index.ts#L98">packages/connect-extension-protocol/src/index.ts:98</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The uniqueId for extension multiplexing</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="chainName" class="tsd-anchor"></a>
 					<h3>chain<wbr>Name</h3>
 					<div class="tsd-signature tsd-kind-icon">chain<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_substrate_connect_extension_protocol.CommonProviderMessageData.html">CommonProviderMessageData</a>.<a href="_substrate_connect_extension_protocol.CommonProviderMessageData.html#chainName">chainName</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect-extension-protocol/src/index.ts#L93">packages/connect-extension-protocol/src/index.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect-extension-protocol/src/index.ts#L100">packages/connect-extension-protocol/src/index.ts:100</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -146,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <a href="_substrate_connect_extension_protocol.MessageToManager.html" class="tsd-signature-type" data-tsd-kind="Interface">MessageToManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect-extension-protocol/src/index.ts#L97">packages/connect-extension-protocol/src/index.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect-extension-protocol/src/index.ts#L106">packages/connect-extension-protocol/src/index.ts:106</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -155,13 +179,14 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="origin" class="tsd-anchor"></a>
 					<h3>origin</h3>
 					<div class="tsd-signature tsd-kind-icon">origin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;extension-provider&quot;</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_substrate_connect_extension_protocol.CommonProviderMessageData.html">CommonProviderMessageData</a>.<a href="_substrate_connect_extension_protocol.CommonProviderMessageData.html#origin">origin</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/6fa47bf7a8/packages/connect-extension-protocol/src/index.ts#L89">packages/connect-extension-protocol/src/index.ts:89</a></li>
+							<li>Defined in <a href="https://github.com/paritytech/substrate-connect/blob/9bfcd15723/packages/connect-extension-protocol/src/index.ts#L94">packages/connect-extension-protocol/src/index.ts:94</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -195,6 +220,9 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="_substrate_connect_extension_protocol.CommonProviderMessageData.html" class="tsd-kind-icon">Common<wbr>Provider<wbr>Message<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="_substrate_connect_extension_protocol.ExtensionMessage.html" class="tsd-kind-icon">Extension<wbr>Message</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
@@ -217,16 +245,19 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_substrate_connect_extension_protocol.ProviderMessageData.html#action" class="tsd-kind-icon">action</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_substrate_connect_extension_protocol.ProviderMessageData.html#appName" class="tsd-kind-icon">app<wbr>Name</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_substrate_connect_extension_protocol.ProviderMessageData.html#chainId" class="tsd-kind-icon">chain<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_substrate_connect_extension_protocol.ProviderMessageData.html#chainName" class="tsd-kind-icon">chain<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_substrate_connect_extension_protocol.ProviderMessageData.html#message" class="tsd-kind-icon">message</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_substrate_connect_extension_protocol.ProviderMessageData.html#origin" class="tsd-kind-icon">origin</a>
 							</li>
 						</ul>
@@ -262,6 +293,9 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>

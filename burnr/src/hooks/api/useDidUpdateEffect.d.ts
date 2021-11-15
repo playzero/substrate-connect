@@ -1,4 +1,4 @@
-import { DependencyList, EffectCallback } from 'react';
+import { DependencyList, EffectCallback } from "react";
 /**
  * Exactly like React's `useEffect`, but skips initial render. Tries to
  * reproduce `componentDidUpdate` behavior.

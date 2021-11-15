@@ -1,8 +1,8 @@
-import { Balance, Index, RefCount } from '@polkadot/types/interfaces';
-import { u32 } from '@polkadot/types';
-import { Codec } from '@polkadot/types/types';
-import { ApiPromise } from '@polkadot/api';
-import { KeyringPair, KeyringPair$Json } from '@polkadot/keyring/types';
+import { Balance, Index, RefCount } from "@polkadot/types/interfaces";
+import { u32 } from "@polkadot/types";
+import { Codec } from "@polkadot/types/types";
+import { ApiPromise } from "@polkadot/api";
+import { KeyringPair, KeyringPair$Json } from "@polkadot/keyring/types";
 export interface Option {
     network: string;
     client: string | undefined;
@@ -96,14 +96,14 @@ export interface Data extends ExtrinsicInfo {
     extrinsic: string;
 }
 export interface SizeScale {
-    size?: 'large' | 'medium' | 'small';
+    size?: "large" | "medium" | "small";
 }
 export interface Column {
-    id: 'withWhom' | 'extrinsic' | 'value' | 'status';
+    id: "withWhom" | "extrinsic" | "value" | "status";
     label: string;
     minWidth?: number;
     maxWidth?: number;
     width?: number;
-    align?: 'right';
+    align?: "right";
 }
 //# sourceMappingURL=types.d.ts.map

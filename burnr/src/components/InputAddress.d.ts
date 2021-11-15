@@ -1,4 +1,4 @@
-import React, { SetStateAction, Dispatch } from 'react';
+import React, { SetStateAction, Dispatch } from "react";
 interface Props {
     setAddress: Dispatch<SetStateAction<string>>;
 }
