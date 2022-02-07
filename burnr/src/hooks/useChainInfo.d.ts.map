@@ -1,1 +1,1 @@
-{"version":3,"file":"useChainInfo.d.ts","sourceRoot":"","sources":["../../../src/hooks/useChainInfo.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,MAAM,EAAE,MAAM,4BAA4B,CAAA;AAOnD,MAAM,CAAC,OAAO,UAAU,YAAY,IAAI,MAAM,GAAG,SAAS,CAczD"}
+{"version":3,"file":"useChainInfo.d.ts","sourceRoot":"","sources":["../../../src/hooks/useChainInfo.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,MAAM,EAAE,MAAM,4BAA4B,CAAA;AAOnD,eAAO,MAAM,YAAY,QAAO,MAAM,GAAG,SAcxC,CAAA"}

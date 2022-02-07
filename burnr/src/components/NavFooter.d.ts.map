@@ -1,1 +1,1 @@
-{"version":3,"file":"NavFooter.d.ts","sourceRoot":"","sources":["../../../src/components/NavFooter.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AAIzB,QAAA,MAAM,SAAS,EAAE,KAAK,CAAC,iBAiDtB,CAAA;AAED,eAAe,SAAS,CAAA"}
+{"version":3,"file":"NavFooter.d.ts","sourceRoot":"","sources":["../../../src/components/NavFooter.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAE,iBAAiB,EAAE,MAAM,OAAO,CAAA;AAIzC,QAAA,MAAM,SAAS,EAAE,iBAiDhB,CAAA;AAED,eAAe,SAAS,CAAA"}

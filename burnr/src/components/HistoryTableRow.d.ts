@@ -1,4 +1,4 @@
-import React from "react";
+import { FunctionComponent } from "react";
 import { Column } from "../utils/types";
 interface rowContent {
     withWhom: string;
@@ -12,6 +12,6 @@ interface Props {
     unit?: string;
     showStatus?: boolean;
 }
-declare const HistoryTableRow: React.FunctionComponent<Props>;
+declare const HistoryTableRow: FunctionComponent<Props>;
 export default HistoryTableRow;
 //# sourceMappingURL=HistoryTableRow.d.ts.map

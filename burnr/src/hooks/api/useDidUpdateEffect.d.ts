@@ -5,5 +5,5 @@ import { DependencyList, EffectCallback } from "react";
  *
  * @see https://stackoverflow.com/questions/53179075/with-useeffect-how-can-i-skip-applying-an-effect-upon-the-initial-render/53180013#53180013
  */
-export declare function useDidUpdateEffect(fn: EffectCallback, inputs?: DependencyList): void;
+export declare const useDidUpdateEffect: (fn: EffectCallback, inputs?: DependencyList | undefined) => void;
 //# sourceMappingURL=useDidUpdateEffect.d.ts.map

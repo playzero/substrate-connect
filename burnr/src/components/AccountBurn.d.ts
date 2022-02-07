@@ -1,4 +1,4 @@
-import React from "react";
-declare const AccountBurn: React.FunctionComponent;
+import { FunctionComponent } from "react";
+declare const AccountBurn: FunctionComponent;
 export default AccountBurn;
 //# sourceMappingURL=AccountBurn.d.ts.map

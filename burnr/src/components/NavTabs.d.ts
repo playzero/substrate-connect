@@ -1,4 +1,4 @@
-import React from "react";
-declare const NavTabs: React.FunctionComponent;
+import { FunctionComponent } from "react";
+declare const NavTabs: FunctionComponent;
 export default NavTabs;
 //# sourceMappingURL=NavTabs.d.ts.map

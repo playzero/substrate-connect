@@ -1,4 +1,4 @@
-import React from "react";
-export declare const BurnrBG: React.FunctionComponent;
-export declare const BurnrDivider: React.FunctionComponent;
+import { FunctionComponent } from "react";
+export declare const BurnrBG: FunctionComponent;
+export declare const BurnrDivider: FunctionComponent;
 //# sourceMappingURL=Bg.d.ts.map

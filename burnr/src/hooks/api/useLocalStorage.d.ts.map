@@ -1,1 +1,1 @@
-{"version":3,"file":"useLocalStorage.d.ts","sourceRoot":"","sources":["../../../../src/hooks/api/useLocalStorage.ts"],"names":[],"mappings":"AAEA,QAAA,MAAM,eAAe,oBACF,MAAM,KACtB,CAAC,MAAM,EAAE,MAAM,QAAQ,CAAC,MAAM,cAAc,CAAC,MAAM,CAAC,CAAC,CAUvD,CAAA;AAED,eAAe,eAAe,CAAA"}
+{"version":3,"file":"useLocalStorage.d.ts","sourceRoot":"","sources":["../../../../src/hooks/api/useLocalStorage.ts"],"names":[],"mappings":"AAAA,OAAO,EAAuB,QAAQ,EAAE,cAAc,EAAE,MAAM,OAAO,CAAA;AAErE,eAAO,MAAM,eAAe,oBACT,MAAM,KACtB,CAAC,MAAM,EAAE,SAAS,eAAe,MAAM,CAAC,CAAC,CAU3C,CAAA"}

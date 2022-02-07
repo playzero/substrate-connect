@@ -1,3 +1,3 @@
 import { ApiPromise } from "@polkadot/api";
-export default function useApiCreate(): ApiPromise;
+export declare const useApiCreate: () => ApiPromise;
 //# sourceMappingURL=useApiCreate.d.ts.map

@@ -16,10 +16,7 @@ export interface Account {
     address: string;
     name: string;
 }
-export interface DeriveCtx {
-    deriveAddress?: (userName: string) => string;
-}
-export interface AccountCtx extends DeriveCtx {
+export interface AccountCtx {
     userAddress: string;
     userPair?: KeyringPair;
     userName: string;
@@ -33,7 +30,7 @@ export interface CreateAccountCtx {
     account: LocalStorageAccountCtx;
     setCurrentAccount: (account: LocalStorageAccountCtx) => void;
 }
-export interface AdminCtx extends DeriveCtx {
+export interface AdminCtx {
     adminAddress: string;
     adminPair: KeyringPair;
     deriveAdmin: (userName: string) => string;

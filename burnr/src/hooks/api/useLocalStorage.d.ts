@@ -1,3 +1,3 @@
-declare const useLocalStorage: (localStorageKey: string) => [string, React.Dispatch<React.SetStateAction<string>>];
-export default useLocalStorage;
+import { Dispatch, SetStateAction } from "react";
+export declare const useLocalStorage: (localStorageKey: string) => [string, Dispatch<SetStateAction<string>>];
 //# sourceMappingURL=useLocalStorage.d.ts.map

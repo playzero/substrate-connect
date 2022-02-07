@@ -1,1 +1,1 @@
-{"version":3,"file":"ReceiveFundsForm.d.ts","sourceRoot":"","sources":["../../../src/components/ReceiveFundsForm.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAqB,MAAM,OAAO,CAAA;AAMzC,QAAA,MAAM,gBAAgB,EAAE,KAAK,CAAC,iBAO7B,CAAA;AAED,eAAe,gBAAgB,CAAA"}
+{"version":3,"file":"ReceiveFundsForm.d.ts","sourceRoot":"","sources":["../../../src/components/ReceiveFundsForm.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAE,iBAAiB,EAAc,MAAM,OAAO,CAAA;AAMrD,QAAA,MAAM,gBAAgB,EAAE,iBAOvB,CAAA;AAED,eAAe,gBAAgB,CAAA"}
