@@ -1,4 +1,4 @@
-declare const _default: {
+declare const colors: {
     black: string;
     white: string;
     paper: string;
@@ -38,5 +38,5 @@ declare const _default: {
     };
     gradient: string;
 };
-export default _default;
+export default colors;
 //# sourceMappingURL=colors.d.ts.map

@@ -9,7 +9,8 @@ export interface Option {
     provider: string;
 }
 export interface SimpleProvider {
-    network: string;
+    name: string;
+    id: string;
     client: string;
 }
 export interface Account {

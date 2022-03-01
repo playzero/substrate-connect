@@ -1,1 +1,1 @@
-{"version":3,"file":"SendFundsForm.d.ts","sourceRoot":"","sources":["../../../src/components/SendFundsForm.tsx"],"names":[],"mappings":"AAGA,OAAO,EAKL,iBAAiB,EAClB,MAAM,OAAO,CAAA;AAgHd,QAAA,MAAM,aAAa,EAAE,iBA6MpB,CAAA;AAED,eAAe,aAAa,CAAA"}
+{"version":3,"file":"SendFundsForm.d.ts","sourceRoot":"","sources":["../../../src/components/SendFundsForm.tsx"],"names":[],"mappings":"AAAA,OAAO,EAKL,iBAAiB,EAClB,MAAM,OAAO,CAAA;AAgHd,QAAA,MAAM,aAAa,EAAE,iBA6MpB,CAAA;AAED,eAAe,aAAa,CAAA"}
