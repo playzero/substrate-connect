@@ -1,1 +1,1 @@
-{"version":3,"file":"useApiCreate.d.ts","sourceRoot":"","sources":["../../../../src/hooks/api/useApiCreate.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,UAAU,EAAE,MAAM,eAAe,CAAA;AAS1C,eAAO,MAAM,YAAY,QAAO,UAwB/B,CAAA"}
+{"version":3,"file":"useApiCreate.d.ts","sourceRoot":"","sources":["../../../../src/hooks/api/useApiCreate.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,UAAU,EAAE,MAAM,eAAe,CAAA;AAW1C,eAAO,MAAM,YAAY,QAAO,UAuB/B,CAAA"}
